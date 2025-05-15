@@ -68,7 +68,7 @@ sudo su
 df -h
 ```
 
-![4.3 Mostrar sistemas de ficheros montados](imagenes/tarea_6.png)
+![4.3 Mostrar sistemas de ficheros montados](imagenes/tarea_10.png)
 
 
 
@@ -80,7 +80,7 @@ df -h
 fdisk -l /dev/sda
 ```
 
-![4.4 Listar la tabla de particiones](imagenes/tarea_7.png)
+![4.4 Listar la tabla de particiones](imagenes/tarea_11.png)
 
 
 
@@ -92,7 +92,7 @@ fdisk -l /dev/sda
 mkdir /mnt/recuperar
 ```
 
-![4.5 Crear directorio de montaje](imagenes/tarea_8.png)
+![4.5 Crear directorio de montaje](imagenes/tarea_12.png)
 
 
 
@@ -104,7 +104,7 @@ mkdir /mnt/recuperar
 mount -t auto /dev/sda1 /mnt/recuperar
 ```
 
-![4.6 Montar la partición](imagenes/tarea_9.png)
+![4.6 Montar la partición](imagenes/tarea_12.png)
 
 
 
@@ -116,7 +116,7 @@ mount -t auto /dev/sda1 /mnt/recuperar
 mount --bind /dev /mnt/recuperar/dev
 ```
 
-![4.7 Montar /dev](imagenes/tarea_10.png)
+![4.7 Montar /dev](imagenes/tarea_13.png)
 
 
 
@@ -128,7 +128,7 @@ mount --bind /dev /mnt/recuperar/dev
 mount --bind /proc /mnt/recuperar/proc
 ```
 
-![4.8 Montar /proc](imagenes/tarea_11.png)
+![4.8 Montar /proc](imagenes/tarea_13.png)
 
 
 
@@ -140,7 +140,7 @@ mount --bind /proc /mnt/recuperar/proc
 mount --bind /sys /mnt/recuperar/sys
 ```
 
-![4.9 Montar /sys](imagenes/tarea_12.png)
+![4.9 Montar /sys](imagenes/tarea_13.png)
 
 
 
@@ -151,8 +151,6 @@ mount --bind /sys /mnt/recuperar/sys
 ```bash
 chroot /mnt/recuperar
 ```
-
-![4.10 Crear jaula chroot](imagenes/tarea_12.png)
 
 
 
@@ -168,6 +166,12 @@ umount /mnt/recuperar
 ```
 
 ![4.11 Desmontar sistemas montados](imagenes/tarea_14.png)
+
+
+### 4.12 Eliminar la ISO y arrancar Debian normalmente
+
+- Se elimina la ISO de la configuración de VirtualBox.
+- Se arranca el sistema Debian de manera habitual.
 
 
 ### 4.12 Eliminar la ISO y arrancar Debian normalmente
